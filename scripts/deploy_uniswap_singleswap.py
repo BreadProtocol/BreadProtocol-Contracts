@@ -26,7 +26,7 @@ def deploy_swaprouter():
 def deploy_uniswap_singleswap():
     account = accounts[0]
     single_swap = SwapExamples.deploy(
-        # deploy ISwapRouter contract then pass as argument
+        '0xE592427A0AEce92De3Edee1F18E0157C05861564',
         {"from": account}
     )
 def main():
