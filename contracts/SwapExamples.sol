@@ -24,7 +24,7 @@ contract SwapExamples {
     // For this example, we will set the pool fee to 0.3%.
     uint24 public constant poolFee = 3000;
 
-    constructor(ISwapRouter _swapRouter) {
+    constructor(ISwapRouter _swapRouter) public {
         swapRouter = _swapRouter;
     }
 
