@@ -34,10 +34,11 @@ contract SwapExamples {
     /// @param amountIn The exact amount of DAI that will be swapped for WETH9.
     /// @return amountOut The amount of WETH9 received.
     function swapExactInputSingle(uint256 amountIn)
-        external
+        public
         returns (uint256 amountOut)
     {
         // msg.sender must approve this contract
+        // approve(address(this), amountIn);
 
         // Transfer the specified amount of DAI to this contract.
         TransferHelper.safeTransferFrom(
@@ -75,7 +76,7 @@ contract SwapExamples {
     /// @param amountInMaximum The amount of DAI we are willing to spend to receive the specified amount of WETH9.
     /// @return amountIn The amount of DAI actually spent in the swap.
     function swapExactOutputSingle(uint256 amountOut, uint256 amountInMaximum)
-        external
+        public
         returns (uint256 amountIn)
     {
         // Transfer the specified amount of DAI to this contract.
