@@ -21,8 +21,8 @@ def deploy_uniswap_singleswap():
 
 def main():
     account = accounts[0]
-    # WETH address
-    erc20_address = '0x6B175474E89094C44Da98b954EedeAC495271d0F'
+    # erc20_address = '0x6B175474E89094C44Da98b954EedeAC495271d0F' # DAI address
+    erc20_address = '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2' # WETH address
     amount = Web3.toWei(0.1, "ether")
     print("Getting WETH...")
     get_weth(account)
